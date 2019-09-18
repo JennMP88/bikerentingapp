@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Header(){
+function Header(props){
   return(
   <>
  
@@ -13,7 +13,7 @@ function Header(){
   </div>
 
 <div className="float-right" >
-<i className="fa fa-shopping-cart fa-2x"   style={{cursor:"pointer"}} >  </i>
+<i className="fa fa-shopping-cart fa-2x"   style={{cursor:"pointer"}} onClick={props.popup}> {props.count} </i>
 </div>
 
 </div>
