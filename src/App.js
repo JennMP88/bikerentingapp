@@ -56,14 +56,19 @@ class App extends Component {
 
     //loops through prices of the items checkedout and pushes it to price array
     for(let i=0;i<checkedOut.length;i++){
-      prices.push(checkedOut[i].price)
+      let priceis=(checkedOut[i].price)
+
+      prices.push(priceis)
     }
 
     //loops through each item price in price array to take the sum of each price
     for(let i=0;i<prices.length;i++){
-      sum+=prices[i]
-    }
+      console.log('from sum',sum, prices[i],sum+prices[i])
+      // sum=(sum+prices[i])
+      sum=parseFloat((sum+prices[i]).toFixed(2))
 
+    }
+   
     //sets state of checkedout items and sum total for those items
     this.setState({checkedOut,sum})
   }
@@ -89,7 +94,9 @@ class App extends Component {
     } 
 
     //takes new total with that item that was removed and sets checkedout total with new array total in the case of an item being removed
-    newSum=sum-item.price
+    // newSum = sum - item.price
+    console.log('reduced from',sum, item.price, newSum)
+    newSum=parseFloat((sum - item.price).toFixed(2))
     this.setState({sum:newSum})
   }
  
