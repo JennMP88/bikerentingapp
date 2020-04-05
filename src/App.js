@@ -142,7 +142,7 @@ class App extends Component {
           </ModalBody>
           <ModalFooter>
 
-            <Button color='success'>Check Out</Button>
+            {/* <Button color='success'>Check Out</Button> */}
             <Button color='success' onClick={this.toggleModal.bind(this)}>Cancel</Button>
           </ModalFooter>
         </Modal>

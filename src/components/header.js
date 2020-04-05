@@ -9,7 +9,7 @@ function Header(props){
  <div className="jumbotron jumbotron-fluid" style={{backgroundColor:"#b0e0e6"}}>
   <div className="container">
       <div class="col-lg-auto">
-    <h1 className="display-4" style={{fontFamily: 'Saira Stencil One'}}>TopView Rentals</h1>
+    <h1 className="display-4" style={{fontFamily: 'Saira Stencil One'}}>Bike Rentals</h1>
   </div>
 
 <div className="float-right" >
