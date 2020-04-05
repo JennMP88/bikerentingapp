@@ -1,4 +1,4 @@
-TOPVIEW BIKE RENTAL 
+BIKE RENTALS 
 ===
 
 <h2>Product Reservation Page</h2>
